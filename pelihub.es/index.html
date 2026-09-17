@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>PeliHub</title>
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+<body>
+    <header>
+        <a href="index.html">
+            <img src="img/logo.png" alt="Logo PeliHub" class="logo">
+        </a>
+        <a href="contact.html">
+            <h2>
+                Contacto
+            </h2>
+        </a>
+    </header>
+
+    <main>
+        
+    </main>
+    
+    <footer>
+        <p>
+            &copy; 2026 PeliHub 
+        </p>
+        <p>
+            <span id="date"></span>
+        </p>
+    </footer>
+
+    <script>
+        const date = new Date();
+        const options = { year: 'numeric', month: 'long', day: 'numeric' };
+        document.getElementById('date').textContent = date.toLocaleDateString('es-ES', options);
+    </script>
+</body>
+</html>
